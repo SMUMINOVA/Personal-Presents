@@ -1,26 +1,32 @@
 @model RegisterModel
 
+@{
+    Layout = null;
+}
 
-<form method="post" asp-action="Register" asp-controller ="Account" asp-anti-forgery = "true">
+<form class ="form-signin" method="post" asp-action="Register" asp-controller ="Account" asp-anti-forgery = "true">
+    <img class="mb-4" src="~/Data/img/shariki.jpg" alt="" width="72" height="72">
     <div class="validation" asp-validation-summary="ModelOnly"></div>
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <div>
         <div>
-            <label asp-for="Email">Email: </label>
-            <input type="text" asp-for="Email">
+            <label class="sr-only" asp-for="Email">Email address</label>
+            <input type="text" asp-for="Email" class="form-control" placeholder="Email address">
             <span asp-validation-for="Email"></span>
         </div>
         <div>
-            <label asp-for="Password">Пароль: </label>
-            <input type="text" asp-for="Password">
-            <span asp-validation-for="Password"></span>
+            <label asp-for="Password" class="sr-only">Password</label>
+            <input type="text" asp-for="Password" class="form-control" placeholder="Password">
+            <span asp-validation-for="Password" ></span>
         </div>
         <div>
-            <label asp-for="ConfirmPassword">Подтвердите пароль: </label>
-            <input type="text" asp-for="ConfirmPassword">
+            <label asp-for="ConfirmPassword" class="sr-only">Confirm Password</label>
+            <input type="text" asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password">
             <span asp-validation-for="ConfirmPassword"></span>
         </div>
         <div>
-            <input type="submit" value="Регистрация" class="btn btn-success">
+            <input type="submit" value="Register" class="btn btn-lg btn-primary btn-block">
         </div>
     </div>
 </form>
+

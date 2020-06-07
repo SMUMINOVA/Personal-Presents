@@ -20546,11 +20546,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Shared/_UserLayout.cshtml",
       "TargetPath": "Views\\Shared\\_UserLayout.cshtml",
       "FileKind": "mvc"
