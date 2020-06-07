@@ -20521,6 +20521,11 @@
   "RootNamespace": "PersonalPresents",
   "Documents": [
     {
+      "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Shared/preview.cshtml",
+      "TargetPath": "Views\\Shared\\preview.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Account/Login.cshtml",
       "TargetPath": "Views\\Account\\Login.cshtml",
       "FileKind": "mvc"
