@@ -85,7 +85,7 @@ namespace PersonalPresents.DataBase
                 new Festival {Id = 12, Name = "Birth of a child"},
                 new Festival {Id = 13, Name = "To visit"},
                 new Festival {Id = 14, Name = "1st of September"},
-                new Festival {Id = 15, Name = "Other"}               
+                new Festival {Id = 15, Name = "Other"}         
             );
         }
     }
