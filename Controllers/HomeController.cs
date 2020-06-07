@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PersonalPresents.Models;
@@ -18,6 +19,7 @@ namespace PersonalPresents.Controllers
             _logger = logger;
         }
 
+        [Authorize(Roles = "admin, user")]
         public IActionResult Index()
         {
             return View();
