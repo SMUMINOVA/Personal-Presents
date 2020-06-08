@@ -37,8 +37,19 @@ namespace PersonalPresents.Controllers
             ViewBag.RoleForUser = await _context.RoleForUsers.ToListAsync();
             return View(p);
         }
-        public IActionResult Change(Present p){
-            
+        [HttpPost]
+        public async Task<IActionResult> Change(Present p){
+            Present present = await _context.Presents.FirstOrDefaultAsync(x => x.Id == p.Id);
+            present.Name = p.Name;
+            present.Price = p.Price;
+            present.Description = p.Description;
+            present.GenderId = p.GenderId;
+            present.FestivalId = p.FestivalId;
+            present.RoleId = p.RoleId;
+            present.InterestId = p.InterestId;
+            present.ProfessionId = p.ProfessionId;
+            await _context.SaveChangesAsync();
+            return RedirectToAction("GetAllPresents");
         }
     }
 }
