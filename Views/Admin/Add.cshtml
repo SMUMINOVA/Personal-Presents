@@ -4,7 +4,7 @@
     Layout  = "_AdminLayout";
 }
 
-<form method = "post" asp-action="Change" asp-controller="Admin">
+<form method = "post" asp-action="Add" asp-controller="Admin">
 
 <div class = "row">
     <div class = "col-md-10">
@@ -13,16 +13,10 @@
 </div>    
 <div class = "row">
     <div class = "col-md-10">
-        <label for="Price">Price</label>
-    </div>
-    <div class = "col-md-10">
         <input asp-for="Price" type="number" placeholder="Price">
     </div>
 </div>
 <div class = "row">
-    <div class = "col-md-10">
-        <label for="Description">Description</label>
-    </div>
     <div class = "col-md-10">
         <input asp-for="Description" type="text" placeholder="Description">
     </div>

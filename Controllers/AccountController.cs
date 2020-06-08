@@ -58,6 +58,9 @@ namespace PersonalPresents.Controllers
                     .FirstOrDefaultAsync(x => x.Email == model.Email && x.Password == model.Password);
                 if(user != null){
                     await Authenticate(user);
+                    if(user.RoleId == 1){
+                        return RedirectToAction("GetAllPresents", "Admin");
+                    }
                     return RedirectToAction("Index", "Home");
                 }
                 ModelState.AddModelError("","Некорректные логин или пароль");

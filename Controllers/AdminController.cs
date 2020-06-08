@@ -1,16 +1,7 @@
-using System.Collections.Generic;
-using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PersonalPresents.DataBase;
-using PersonalPresents.Models;
-using System.Diagnostics;
-using System.Linq;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.Extensions.Logging;
 using PersonalPresents.Models.PresentModels;
 
 namespace PersonalPresents.Controllers
@@ -71,11 +62,27 @@ namespace PersonalPresents.Controllers
             present.Name = p.Name;
             present.Price = p.Price;
             present.Description = p.Description;
-            present.GenderId = p.GenderId;
-            present.FestivalId = p.FestivalId;
-            present.RoleId = p.RoleId;
-            present.InterestId = p.InterestId;
-            present.ProfessionId = p.ProfessionId;
+            //present.GenderId = p.GenderId;
+            //present.FestivalId = p.FestivalId;
+            //present.RoleId = p.RoleId;
+            //present.InterestId = p.InterestId;
+            //present.ProfessionId = p.ProfessionId;
+            await _context.SaveChangesAsync();
+            return RedirectToAction("GetAllPresents");
+        }
+        public async Task<IActionResult> Delete(int Id){
+            Present p = await _context.Presents.FirstOrDefaultAsync(x => x.Id == Id);
+            _context.Presents.Remove(p);
+            var gender = await _context.Genders.FirstOrDefaultAsync(x => x.Id == p.GenderId);
+            gender.Presents.Remove(p);
+            var role = await _context.RoleForUsers.FirstOrDefaultAsync(x => x.Id == p.RoleId);
+            role.Presents.Remove(p);
+            var fest = await _context.Festivals.FirstOrDefaultAsync(x => x.Id == p.FestivalId);
+            fest.Presents.Remove(p);
+            var interest = await _context.Interests.FirstOrDefaultAsync(x => x.Id == p.InterestId);
+            interest.Presents.Remove(p);
+            var prof = await _context.Professions.FirstOrDefaultAsync(x => x.Id == p.ProfessionId);
+            prof.Presents.Remove(p);
             await _context.SaveChangesAsync();
             return RedirectToAction("GetAllPresents");
         }
