@@ -11,6 +11,11 @@
         <h3>@item.Name</h3>
         <p>@item.Description</p>
         <p>@item.Price.ToString("c")</p>
+        <p>@item.GenderId</p>
+        <p>@item.RoleId</p>
+        <p>@item.ProfessionId</p>
+        <p>@item.InterestId</p>
+        <p>@item.FestivalId</p>
         <p><a class="btn btn-success" asp-action="Change" asp-controller="Admin" asp-all-route-Id="@item.Id">Change</a></p>
         <p><a class="btn btn-danger" asp-action="Delete" asp-controller="Admin" asp-all-route-Id="@item.Id">Delete</a></p>
     </div>

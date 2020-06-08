@@ -7,19 +7,8 @@
 <form method = "post" asp-action="Change" asp-controller="Admin">
 
 <div class = "row">
-    <div class = "col-md-4">
-        <label for="Id">Id</label>
-    </div>
-    <div class = "col-md-4">
-        <label asp-for="Id"> @Model.Id </label>
-    </div>
-</div><br>
-<div class = "row">
     <div class = "col-md-10">
-        <label for="Name">Name</label>
-    </div>
-    <div class = "col-md-10">
-        <input asp-for="Name" type="text" value="@Model.Name">
+        <input asp-for="Name" type="text" placeholder="Name">
     </div>
 </div>    
 <div class = "row">
@@ -27,7 +16,7 @@
         <label for="Price">Price</label>
     </div>
     <div class = "col-md-10">
-        <input asp-for="Price" type="number" value="@Model.Price">
+        <input asp-for="Price" type="number" placeholder="Price">
     </div>
 </div>
 <div class = "row">
@@ -35,7 +24,7 @@
         <label for="Description">Description</label>
     </div>
     <div class = "col-md-10">
-        <input asp-for="Description" type="text" value="@Model.Description">
+        <input asp-for="Description" type="text" placeholder="Description">
     </div>
 </div>
 <div class = "row">
@@ -105,7 +94,7 @@
 </div><br>
 <div class = "row">
     <div class = "col-md-10">
-        <input type="submit" class=" btn btn-primary" value="Change">
+        <input type="submit" class=" btn btn-primary" value="Add">
     </div>
 </div>
 

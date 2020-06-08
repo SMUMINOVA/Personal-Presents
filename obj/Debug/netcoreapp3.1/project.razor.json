@@ -20584,6 +20584,11 @@
       "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Admin/GetAllPresents.cshtml",
       "TargetPath": "Views\\Admin\\GetAllPresents.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Admin/Add.cshtml",
+      "TargetPath": "Views\\Admin\\Add.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
