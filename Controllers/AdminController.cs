@@ -31,16 +31,21 @@ namespace PersonalPresents.Controllers
         public async Task<IActionResult> Add(Present p){
             if(ModelState.IsValid){
                 var gender = await _context.Genders.FirstOrDefaultAsync(x => x.Id == p.GenderId);
-                gender.Presents.Add(p);
+                p.gender = gender;
                 var role = await _context.RoleForUsers.FirstOrDefaultAsync(x => x.Id == p.RoleId);
-                role.Presents.Add(p);
+                p.role = role;
                 var fest = await _context.Festivals.FirstOrDefaultAsync(x => x.Id == p.FestivalId);
-                fest.Presents.Add(p);
+                p.festival = fest;
                 var interest = await _context.Interests.FirstOrDefaultAsync(x => x.Id == p.InterestId);
-                interest.Presents.Add(p);
+                p.interest = interest;
                 var prof = await _context.Professions.FirstOrDefaultAsync(x => x.Id == p.ProfessionId);
-                prof.Presents.Add(p);
+                p.profession = prof;
                 _context.Presents.Add(p);
+                gender.Presents.Add(p);
+                prof.Presents.Add(p);
+                interest.Presents.Add(p);
+                fest.Presents.Add(p);
+                role.Presents.Add(p);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("GetAllPresents");
             }
@@ -48,12 +53,12 @@ namespace PersonalPresents.Controllers
         }
         [HttpGet]
         public async Task<IActionResult> Change(int Id){
-            Present p = new Present(){Id = Id};
-            ViewBag.Gender = await _context.Genders.ToListAsync();
-            ViewBag.Festival = await _context.Festivals.ToListAsync();
-            ViewBag.Interest = await _context.Interests.ToListAsync();
-            ViewBag.Profession = await _context.Professions.ToListAsync();
-            ViewBag.RoleForUser = await _context.RoleForUsers.ToListAsync();
+            Present p = await _context.Presents.FindAsync(Id);
+            //ViewBag.Gender = await _context.Genders.ToListAsync();
+            //ViewBag.Festival = await _context.Festivals.ToListAsync();
+            //ViewBag.Interest = await _context.Interests.ToListAsync();
+            //ViewBag.Profession = await _context.Professions.ToListAsync();
+            //ViewBag.RoleForUser = await _context.RoleForUsers.ToListAsync();
             return View(p);
         }
         [HttpPost]
@@ -85,6 +90,10 @@ namespace PersonalPresents.Controllers
             prof.Presents.Remove(p);
             await _context.SaveChangesAsync();
             return RedirectToAction("GetAllPresents");
+        }
+        public async Task<IActionResult> Orders(){
+            var or = await _context.Orders.ToListAsync();
+            return View(or);
         }
     }
 }

@@ -7,102 +7,37 @@
 <form method = "post" asp-action="Change" asp-controller="Admin">
 
 <div class = "row">
-    <div class = "col-md-4">
+    <div class = "col-md-2">
         <label for="Id">Id</label>
     </div>
-    <div class = "col-md-4">
+    <div class = "col-md-2">
         <label asp-for="Id"> @Model.Id </label>
     </div>
 </div><br>
 <div class = "row">
-    <div class = "col-md-10">
+    <div class = "col-md-4">
         <label for="Name">Name</label>
     </div>
-    <div class = "col-md-10">
+    <div class = "col-md-4">
         <input asp-for="Name" type="text" value="@Model.Name">
     </div>
 </div>    
 <div class = "row">
-    <div class = "col-md-10">
+    <div class = "col-md-4">
         <label for="Price">Price</label>
     </div>
-    <div class = "col-md-10">
+    <div class = "col-md-4">
         <input asp-for="Price" type="number" value="@Model.Price">
     </div>
 </div>
 <div class = "row">
-    <div class = "col-md-10">
+    <div class = "col-md-4">
         <label for="Description">Description</label>
     </div>
-    <div class = "col-md-10">
+    <div class = "col-md-4">
         <input asp-for="Description" type="text" value="@Model.Description">
     </div>
 </div>
-<div class = "row">
-    <div class = "col-md-10">
-        <label for="GenderId">Gender</label>
-    </div>
-<div class = "col-md-10">
-    <select class="form-control form-control-lg" name="GenderId" asp-for="GenderId" >
-        @foreach (var item in ViewBag.Gender)
-        {
-            <option value="@item.Id">@item.Name</option>
-        }
-    </select>
-</div>
-</div><br>
-<div class = "row">
-    <div class = "col-md-10">
-        <label for="RoleId">Role</label>
-    </div>
-<div class = "col-md-10">
-    <select class="form-control form-control-lg" name="RoleId" asp-for="RoleId" >
-        @foreach (var item in ViewBag.RoleForUser)
-        {
-            <option value="@item.Id">@item.Name</option>
-        }
-    </select>
-</div>
-</div><br>
-<div class = "row">
-    <div class = "col-md-10">
-        <label for="ProfessionId">Profession</label>
-    </div>
-<div class = "col-md-10">
-    <select class="form-control form-control-lg" name="ProfessionId" asp-for="ProfessionId" >
-        @foreach (var item in ViewBag.Profession)
-        {
-            <option value="@item.Id">@item.Name</option>
-        }
-    </select>
-</div>
-</div><br>
-<div class = "row">
-    <div class = "col-md-10">
-        <label for="InterestId">Interest</label>
-    </div>
-<div class = "col-md-10">
-    <select class="form-control form-control-lg" name="InterestId" asp-for="InterestId" >
-        @foreach (var item in ViewBag.Interest)
-        {
-            <option value="@item.Id">@item.Name</option>
-        }
-    </select>
-</div>
-</div><br>
-<div class = "row">
-    <div class = "col-md-10">
-        <label for="FestivalId">Festival</label>
-    </div>
-<div class = "col-md-10">
-    <select class="form-control form-control-lg" name="FestivalId" asp-for="FestivalId" >
-        @foreach (var item in ViewBag.Festival)
-        {
-            <option value="@item.Id">@item.Name</option>
-        }
-    </select>
-</div>
-</div><br>
 <div class = "row">
     <div class = "col-md-10">
         <input type="submit" class=" btn btn-primary" value="Change">
