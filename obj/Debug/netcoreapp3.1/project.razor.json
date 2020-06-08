@@ -20526,6 +20526,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Shared/_AdminLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_AdminLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Account/Login.cshtml",
       "TargetPath": "Views\\Account\\Login.cshtml",
       "FileKind": "mvc"
@@ -20551,6 +20556,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Admin/Change.cshtml",
+      "TargetPath": "Views\\Admin\\Change.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Shared/_UserLayout.cshtml",
       "TargetPath": "Views\\Shared\\_UserLayout.cshtml",
       "FileKind": "mvc"
@@ -20568,6 +20578,11 @@
     {
       "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Admin/GetAllPresents.cshtml",
+      "TargetPath": "Views\\Admin\\GetAllPresents.cshtml",
       "FileKind": "mvc"
     }
   ],
