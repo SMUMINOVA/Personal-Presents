@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PersonalPresents.Models;
+using PersonalPresents.Models.PackageModels;
 using PersonalPresents.Models.PresentModels;
 
 namespace PersonalPresents.DataBase
@@ -8,12 +9,18 @@ namespace PersonalPresents.DataBase
     {
         public DbSet<User> Users{get;set;}
         public DbSet<Role> Roles{get;set;}
+
+
         public DbSet<Present> Presents{get;set;}
         public DbSet<Festival> Festivals{get;set;}
         public DbSet<Gender> Genders{get;set;}
         public DbSet<Interest> Interests{get;set;}
         public DbSet<Profession> Professions{get;set;}
         public DbSet<RoleForUser> RoleForUsers{get;set;}
+
+        public DbSet<Order> Orders{get;set;}
+        public DbSet<Basket> Baskets{get;set;}
+        public DbSet<Payment> Payments{get;set;}
         public AppDbContent(DbContextOptions<AppDbContent> op) : base(op){
             Database.EnsureCreated();
         }
@@ -24,6 +31,10 @@ namespace PersonalPresents.DataBase
             );
             build.Entity<User>().HasData(
                 new User{ Id = 1, Email = "admin@mail.ru", Password = "123456", RoleId = 1}
+            );
+            build.Entity<Payment>().HasData(
+                new Payment{ Id = 1, Name = "cash"},
+                new Payment{ Id = 2, Name = "card"}
             );
             build.Entity<Gender>().HasData(
                 new Gender {Id = 1, Name = "Man"},

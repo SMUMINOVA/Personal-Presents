@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using PersonalPresents.Models.PackageModels;
+
 namespace PersonalPresents.Models
 {
     public class User
@@ -8,5 +11,9 @@ namespace PersonalPresents.Models
 
         public int RoleId{get;set;}
         public Role Role{get;set;}
+
+        public List<Basket> baskets{get;set;}
+
+        public List<Order> orders{get;set;}
     }
 }
