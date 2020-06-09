@@ -1,0 +1,16 @@
+@model List<Present>
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="row mt-5 mb-2"></div>
+@foreach (var item in Model)
+{
+    <div class="col-md-3">
+        <h3>@item.Name</h3>
+        <p>@item.Description</p>
+        <p>@item.Price.ToString("c")</p>
+        <p><a class="btn btn-success" asp-action="Buy" asp-controller="User" asp-route-Id="@item.Id">Buy</a></p>
+    </div>
+}
