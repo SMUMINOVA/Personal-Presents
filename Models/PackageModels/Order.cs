@@ -8,7 +8,7 @@ namespace PersonalPresents.Models.PackageModels
         public string Adress{get;set;}
         public string PhoneNumber{get;set;}
 
-        public string PaymentId{get;set;}
+        public int PaymentId{get;set;}
         public Payment payment{get;set;}
 
         public int UserId{get;set;}
