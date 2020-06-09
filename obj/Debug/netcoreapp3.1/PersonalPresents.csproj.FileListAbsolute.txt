@@ -84,3 +84,6 @@
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Admin/GetAllPresents.cshtml.g.cs
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_AdminLayout.cshtml.g.cs
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Order.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/GetAllPresents.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/GetInformationForPresent.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/PersonalPresents.cshtml.g.cs

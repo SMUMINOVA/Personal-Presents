@@ -1,7 +1,7 @@
 @model List<Present>
 
 @{
-    Layout = "_AdminLayout";
+    Layout = "_UserLayout";
 }
 
 <div class="row mt-5 mb-2"></div>
@@ -11,6 +11,6 @@
         <h3>@item.Name</h3>
         <p>@item.Description</p>
         <p>@item.Price.ToString("c")</p>
-        <p><a class="btn btn-success" asp-action="Buy" asp-controller="User" asp-route-Id="@item.Id">Buy</a></p>
+        <p><a class="btn btn-success" asp-action="Basket" asp-controller="User" asp-route-Id="@item.Id">To Basket</a></p>
     </div>
 }

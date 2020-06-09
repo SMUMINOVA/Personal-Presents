@@ -1,8 +1,10 @@
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PersonalPresents.DataBase;
+using PersonalPresents.Models.PackageModels;
 using PersonalPresents.Models.PresentModels;
 
 namespace PersonalPresents.Controllers
@@ -46,6 +48,28 @@ namespace PersonalPresents.Controllers
                 Sixth = ByRoleAndGender
             };
             return View(AllPresents);
-        }        
+        }
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> ToBasket(int Id){
+            var p = await _context.Presents.FindAsync(Id);
+            var basket = new Basket(){
+                Name = p.Name,
+                Img = p.Img,
+                PresentsId = p.Id
+            };
+            return View(basket);
+        }
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> ToBasket(Basket b){
+            b.Price = b.Price * b.Count;
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
+            b.UserId = user.Id;
+            user.baskets.Add(b);
+            _context.Baskets.Add(b);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Basket", "User");
+        }
     }
 }

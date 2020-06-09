@@ -1,0 +1,20 @@
+@model Basket
+
+@{
+    Layout = "_UserLayout";
+}
+<form method = "post" asp-action="ToBasket" asp-controller="User">
+<div class="row mt-5 mb-2"></div>
+<div class="col-md-10">
+    <h3>@Model.Name</h3>
+    <p>@Model.Description</p>
+    <p><input asp-for="Count" type="number" value="1"></p>
+    <p>@((Model.Price * Model.Count).ToString("c"))</p>
+</div>
+<div class = "row">
+    <div class = "col-md-10">
+        <input type="submit" class=" btn btn-success" value="To Basket">
+    </div>
+</div>
+
+</form>

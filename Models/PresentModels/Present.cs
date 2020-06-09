@@ -6,6 +6,7 @@ namespace PersonalPresents.Models.PresentModels
         public string Name{get;set;}
         public double Price{get;set;}
         public string Description{get;set;}
+        public string Img{get;set;}
 
         public int RoleId{get;set;}
         public RoleForUser role{get;set;}
