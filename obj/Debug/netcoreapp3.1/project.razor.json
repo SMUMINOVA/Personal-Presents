@@ -20556,6 +20556,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/User/GetInformationForPresent.cshtml",
+      "TargetPath": "Views\\User\\GetInformationForPresent.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -20593,6 +20598,11 @@
     {
       "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Admin/GetAllPresents.cshtml",
       "TargetPath": "Views\\Admin\\GetAllPresents.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/User/PersonalPresents.cshtml",
+      "TargetPath": "Views\\User\\PersonalPresents.cshtml",
       "FileKind": "mvc"
     },
     {

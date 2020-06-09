@@ -1,0 +1,85 @@
+@model Present
+
+@{
+    Layout  = "_AdminLayout";
+}
+
+<form method = "post" asp-action="PersonalPresents" asp-controller="User">
+ 
+<div class = "row">
+    <div class = "col-md-10">
+        <input asp-for="Price" type="number" placeholder="Max Price">
+    </div>
+</div>
+<div class = "row">
+    <div class = "col-md-10">
+        <label for="GenderId">Gender</label>
+    </div>
+<div class = "col-md-10">
+    <select class="form-control form-control-lg" name="GenderId" asp-for="GenderId" >
+        @foreach (var item in ViewBag.Gender)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+</div>
+</div><br>
+<div class = "row">
+    <div class = "col-md-10">
+        <label for="RoleId">Role</label>
+    </div>
+<div class = "col-md-10">
+    <select class="form-control form-control-lg" name="RoleId" asp-for="RoleId" >
+        @foreach (var item in ViewBag.RoleForUser)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+</div>
+</div><br>
+<div class = "row">
+    <div class = "col-md-10">
+        <label for="ProfessionId">Profession</label>
+    </div>
+<div class = "col-md-10">
+    <select class="form-control form-control-lg" name="ProfessionId" asp-for="ProfessionId" >
+        @foreach (var item in ViewBag.Profession)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+</div>
+</div><br>
+<div class = "row">
+    <div class = "col-md-10">
+        <label for="InterestId">Interest</label>
+    </div>
+<div class = "col-md-10">
+    <select class="form-control form-control-lg" name="InterestId" asp-for="InterestId" >
+        @foreach (var item in ViewBag.Interest)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+</div>
+</div><br>
+<div class = "row">
+    <div class = "col-md-10">
+        <label for="FestivalId">Festival</label>
+    </div>
+<div class = "col-md-10">
+    <select class="form-control form-control-lg" name="FestivalId" asp-for="FestivalId" >
+        @foreach (var item in ViewBag.Festival)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+</div>
+</div><br>
+<div class = "row">
+    <div class = "col-md-10">
+        <input type="submit" class=" btn btn-success" value="Next">
+    </div>
+</div>
+
+</form>

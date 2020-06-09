@@ -38,7 +38,8 @@ namespace PersonalPresents.DataBase
             );
             build.Entity<Gender>().HasData(
                 new Gender {Id = 1, Name = "Man"},
-                new Gender {Id = 2, Name = "Woman"}              
+                new Gender {Id = 2, Name = "Woman"},  
+                new Gender {Id = 3, Name = "Doesn't matter"}         
             );
             build.Entity<RoleForUser>().HasData(
                 new RoleForUser {Id = 1, Name = "Mother"},
@@ -54,7 +55,8 @@ namespace PersonalPresents.DataBase
                 new RoleForUser {Id = 11, Name = "Friend"},
                 new RoleForUser {Id = 12, Name = "Boss"},
                 new RoleForUser {Id = 13, Name = "Сolleague"},
-                new RoleForUser {Id = 14, Name = "Other"}
+                new RoleForUser {Id = 14, Name = "Other"},
+                new RoleForUser {Id = 15, Name = "Doesn't matter"}
             );
             build.Entity<Profession>().HasData(
                 new Profession {Id = 1, Name = "Teacher"},
@@ -69,7 +71,8 @@ namespace PersonalPresents.DataBase
                 new Profession {Id = 10, Name = "Oilman"},
                 new Profession {Id = 11, Name = "Sailor"},
                 new Profession {Id = 12, Name = "LawOfficer"},
-                new Profession {Id = 13, Name = "Other"}                
+                new Profession {Id = 13, Name = "Other"},
+                new Profession {Id = 14, Name = "Doesn't matter"}               
             );
             build.Entity<Interest>().HasData(
                 new Interest {Id = 1, Name = "Traveler"},
@@ -96,7 +99,8 @@ namespace PersonalPresents.DataBase
                 new Festival {Id = 12, Name = "Birth of a child"},
                 new Festival {Id = 13, Name = "To visit"},
                 new Festival {Id = 14, Name = "1st of September"},
-                new Festival {Id = 15, Name = "Other"}         
+                new Festival {Id = 15, Name = "Other"}         ,
+                new Festival {Id = 16, Name = "Doesn't matter"}
             );
         }
     }

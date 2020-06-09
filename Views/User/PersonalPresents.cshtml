@@ -1,0 +1,70 @@
+@model ViewPersonalPresent
+
+@{
+    Layout = "_UserLayout";
+}
+
+<div class="row mt-5 mb-2"></div>
+@foreach (var item in Model.First)
+{
+    <div class="col-md-3">
+        <h3>@item.Name</h3>
+        <p>@item.Description</p>
+        <p>@item.Price.ToString("c")</p>
+        <p><a class="btn btn-success" asp-action="Buy" asp-controller="User" asp-route-Id="@item.Id">Buy</a></p>
+    </div>
+}
+@foreach (var item in Model.First)
+{
+    <div class="col-md-3">
+        <h3>@item.Name</h3>
+        <p>@item.Description</p>
+        <p>@item.Price.ToString("c")</p>
+        <p><a class="btn btn-success" asp-action="Buy" asp-controller="User" asp-route-Id="@item.Id">Buy</a></p>
+    </div>
+}
+@foreach (var item in Model.Second)
+{
+    <div class="col-md-3">
+        <h3>@item.Name</h3>
+        <p>@item.Description</p>
+        <p>@item.Price.ToString("c")</p>
+        <p><a class="btn btn-success" asp-action="Buy" asp-controller="User" asp-route-Id="@item.Id">Buy</a></p>
+    </div>
+}
+@foreach (var item in Model.Third)
+{
+    <div class="col-md-3">
+        <h3>@item.Name</h3>
+        <p>@item.Description</p>
+        <p>@item.Price.ToString("c")</p>
+        <p><a class="btn btn-success" asp-action="Buy" asp-controller="User" asp-route-Id="@item.Id">Buy</a></p>
+    </div>
+}
+@foreach (var item in Model.Fourth)
+{
+    <div class="col-md-3">
+        <h3>@item.Name</h3>
+        <p>@item.Description</p>
+        <p>@item.Price.ToString("c")</p>
+        <p><a class="btn btn-success" asp-action="Buy" asp-controller="User" asp-route-Id="@item.Id">Buy</a></p>
+    </div>
+}
+@foreach (var item in Model.Fifth)
+{
+    <div class="col-md-3">
+        <h3>@item.Name</h3>
+        <p>@item.Description</p>
+        <p>@item.Price.ToString("c")</p>
+        <p><a class="btn btn-success" asp-action="Buy" asp-controller="User" asp-route-Id="@item.Id">Buy</a></p>
+    </div>
+}
+@foreach (var item in Model.Sixth)
+{
+    <div class="col-md-3">
+        <h3>@item.Name</h3>
+        <p>@item.Description</p>
+        <p>@item.Price.ToString("c")</p>
+        <p><a class="btn btn-success" asp-action="Buy" asp-controller="User" asp-route-Id="@item.Id">Buy</a></p>
+    </div>
+}
