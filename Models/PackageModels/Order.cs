@@ -5,7 +5,9 @@ namespace PersonalPresents.Models.PackageModels
     public class Order
     {
         public int Id{get;set;}
-        public string Presents{get;set;}
+        public string Present{get;set;}
+        public int Count{get;set;}
+        public int PresentsId{get;set;}
         public double Price{get;set;}
         public string Adress{get;set;}
         public string PhoneNumber{get;set;}

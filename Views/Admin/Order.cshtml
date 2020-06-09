@@ -11,6 +11,7 @@
     <tr>
         <th>Id</th>
         <th>Presents</th>
+        <th>Count</th>
         <th>Price</th>
         <th>Payment</th>
         <th>User</th>
@@ -22,14 +23,17 @@
         @foreach (var item in Model)
         {
             <tr>
-                <th>@item.Id</th>
-                <th>@item.Presents</th>
-                <th>@item.Price</th>
-                <th>@item.PaymentId</th>
-                <th>@item.UserId</th>
-                <th>@item.Adress</th>
-                <th>@item.PhoneNumber</th>
-                <th>@item.Date</th>
+                <td>@item.Id</td>
+                <a asp-action="GetPresent" asp-controller="User" asp-route-Id="@item.PresentsId">
+                    <td>@item.Present</td>
+                </a>
+                <td>@item.Count</td>
+                <td>@item.Price</td>
+                <td>@item.PaymentId</td>
+                <td>@item.UserId</td>
+                <td>@item.Adress</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.Date</td>
             </tr>
         }
     }

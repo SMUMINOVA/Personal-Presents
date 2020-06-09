@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -66,8 +67,9 @@ namespace PersonalPresents.Controllers
             b.Price = b.Price * b.Count;
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
             b.UserId = user.Id;
-            user.baskets.Add(b);
             _context.Baskets.Add(b);
+            await _context.SaveChangesAsync();
+            user.baskets.Add(b);
             await _context.SaveChangesAsync();
             return RedirectToAction("Basket", "User");
         }
@@ -82,6 +84,32 @@ namespace PersonalPresents.Controllers
             _context.Baskets.Remove(basket);
             await _context.SaveChangesAsync();
             return RedirectToAction("MyBasket");
+        }
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> Buy(int Id){
+            var basket = await _context.Baskets.FindAsync(Id);
+            ViewBag.BasketId = Id;
+            ViewBag.Payment = await _context.Payments.ToListAsync();
+            var order = new Order(){
+                Present = basket.Name,
+                Count = basket.Count,
+                PresentsId = basket.PresentsId,
+                Price = basket.Price,
+                Date = DateTime.Now,
+            };
+            return View(order);
+        }
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Buy(Order o){
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
+            o.UserId = user.Id;
+            _context.Orders.Add(o);
+            await _context.SaveChangesAsync();
+            user.orders.Add(o);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("MyOrders");
         }
     }
 }

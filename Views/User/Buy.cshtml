@@ -1,0 +1,37 @@
+@model Order
+
+@{
+    Layout = "_UserLayout";
+}
+
+<form method = "post" asp-action="Buy" asp-controller="User">
+<div class = "row">
+    <div class = "col-md-10">
+        <input asp-for="Adress" type="text" placeholder="Adress">
+    </div>
+</div>    
+<div class = "row">
+    <div class = "col-md-10">
+        <input asp-for="PhoneNumber" type="text" placeholder="Phone number">
+    </div>
+</div>
+<div class = "row">
+    <div class = "col-md-10">
+        <label for="PaymentId">Payment</label>
+    </div>
+<div class = "col-md-5">
+    <select class="form-control form-control-lg" name="PaymentId" asp-for="PaymentId" >
+        @foreach (var item in ViewBag.Payment)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+</div>
+</div><br>
+<div class = "row">
+    <div class = "col-md-10">
+        <input type="submit" class=" btn btn-success" value="Buy">
+    </div>
+</div>
+
+</form>
