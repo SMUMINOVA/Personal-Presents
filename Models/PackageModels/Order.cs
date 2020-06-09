@@ -1,3 +1,5 @@
+using System;
+
 namespace PersonalPresents.Models.PackageModels
 {
     public class Order
@@ -7,6 +9,7 @@ namespace PersonalPresents.Models.PackageModels
         public double Price{get;set;}
         public string Adress{get;set;}
         public string PhoneNumber{get;set;}
+        public DateTime Date{get;set;}
 
         public int PaymentId{get;set;}
         public Payment payment{get;set;}

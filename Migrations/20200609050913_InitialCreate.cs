@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PersonalPresents.Migrations
 {
@@ -201,6 +202,7 @@ namespace PersonalPresents.Migrations
                     Price = table.Column<double>(nullable: false),
                     Adress = table.Column<string>(nullable: true),
                     PhoneNumber = table.Column<string>(nullable: true),
+                    Date = table.Column<DateTime>(nullable: false),
                     PaymentId = table.Column<int>(nullable: false),
                     UserId = table.Column<int>(nullable: false)
                 },

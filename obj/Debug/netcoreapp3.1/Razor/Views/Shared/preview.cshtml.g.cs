@@ -33,8 +33,15 @@ using PersonalPresents.Models.PresentModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/_ViewImports.cshtml"
+using PersonalPresents.Models.PackageModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a3", @"/Views/Shared/preview.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c3eb45d1378e93d7a8f155bc20b4d376c242e100", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"90303a475590be34a1ef018ca64def32cd8b1610", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_preview : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -93,7 +100,7 @@ using PersonalPresents.Models.PresentModels;
 #line hidden
 #nullable disable
             WriteLiteral("            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a34275", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a34478", async() => {
 #nullable restore
 #line 25 "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Shared/preview.cshtml"
                                 Write(item.Name);
@@ -141,7 +148,7 @@ using PersonalPresents.Models.PresentModels;
 #line hidden
 #nullable disable
             WriteLiteral("            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a36755", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a36958", async() => {
 #nullable restore
 #line 38 "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Shared/preview.cshtml"
                                 Write(item.Name);
@@ -198,7 +205,7 @@ using PersonalPresents.Models.PresentModels;
 #line hidden
 #nullable disable
             WriteLiteral("            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a39250", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a39453", async() => {
 #nullable restore
 #line 51 "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Shared/preview.cshtml"
                                 Write(item.Name);
@@ -255,7 +262,7 @@ using PersonalPresents.Models.PresentModels;
 #line hidden
 #nullable disable
             WriteLiteral("            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a311735", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a311938", async() => {
 #nullable restore
 #line 64 "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Shared/preview.cshtml"
                                 Write(item.Name);
@@ -312,7 +319,7 @@ using PersonalPresents.Models.PresentModels;
 #line hidden
 #nullable disable
             WriteLiteral("            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a314221", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a3b7a7f391b9d5ad712f83d5bc423c6dfcaf1a314424", async() => {
 #nullable restore
 #line 77 "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Shared/preview.cshtml"
                                 Write(item.Name);

@@ -1,0 +1,42 @@
+@model List<Order>
+
+@{
+    Layout="_AdminLayout";
+}
+
+<table class="table table-striped table-inverse">
+    <tr class="text-center">
+        <thead >List of orders</thead>
+    </tr>
+    <tr>
+        <th>Id</th>
+        <th>Presents</th>
+        <th>Price</th>
+        <th>Payment</th>
+        <th>User</th>
+        <th>Adress</th>
+        <th>Phone number</th>
+        <th>Date</th>
+    </tr>
+    @if(Model.Count > 0){
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.Id</th>
+                <th>@item.Presents</th>
+                <th>@item.Price</th>
+                <th>@item.PaymentId</th>
+                <th>@item.UserId</th>
+                <th>@item.Adress</th>
+                <th>@item.PhoneNumber</th>
+                <th>@item.Date</th>
+            </tr>
+        }
+    }
+    else{
+        <tr class="text-center">
+            <th colspan="8">Empty</th>
+        </tr>
+    }
+    
+</table>
