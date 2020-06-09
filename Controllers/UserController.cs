@@ -21,6 +21,10 @@ namespace PersonalPresents.Controllers
             var presents = await _context.Presents.ToListAsync();
             return View(presents);
         }
+        public async Task<IActionResult> GetPresent(int Id){
+            var present = await _context.Presents.FindAsync(Id);
+            return View("GetAllPresents", present);
+        }
         [HttpGet]
         public async Task<IActionResult> PersonalPresents(){
             ViewBag.Gender = await _context.Genders.ToListAsync();
