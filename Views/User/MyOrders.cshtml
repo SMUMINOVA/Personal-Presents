@@ -1,0 +1,20 @@
+@model List<Order>
+
+@{
+    Layout = "_UserLayout";
+}
+
+<div class="row mt-5 mb-2"></div>
+@foreach (var item in Model)
+{
+    <div class="col-md-3">
+        <a asp-action="GetPresent" asp-controller="User" asp-route-Id="@item.PresentsId">
+            <h3>@item.Present</h3>
+        </a>        
+        <p>Count: @item.Count</p>
+        <p>Price: @item.Price.ToString("c")</p>
+        <p>Adress: @item.Adress</p>
+        <p>Phone: @item.PhoneNumber</p>
+        <p>Date: @item.Date</p>
+    </div>
+}

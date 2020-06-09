@@ -20586,6 +20586,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/User/MyOrders.cshtml",
+      "TargetPath": "Views\\User\\MyOrders.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/Admin/Change.cshtml",
       "TargetPath": "Views\\Admin\\Change.cshtml",
       "FileKind": "mvc"

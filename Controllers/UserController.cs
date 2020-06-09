@@ -111,5 +111,11 @@ namespace PersonalPresents.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("MyOrders");
         }
+        [Authorize]
+        public async Task<IActionResult> MyOrders(){
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
+            var orders = await _context.Orders.Where(x => x.UserId == user.Id).ToListAsync();
+            return View(orders);
+        }
     }
 }
