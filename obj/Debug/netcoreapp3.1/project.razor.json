@@ -20536,6 +20536,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/User/MyBasket.cshtml",
+      "TargetPath": "Views\\User\\MyBasket.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/Views/User/ToBasket.cshtml",
       "TargetPath": "Views\\User\\ToBasket.cshtml",
       "FileKind": "mvc"

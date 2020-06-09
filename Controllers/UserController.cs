@@ -71,5 +71,17 @@ namespace PersonalPresents.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("Basket", "User");
         }
+        [Authorize]
+        public async Task<IActionResult> MyBasket(){
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
+            var presents = await _context.Baskets.Where(x => x.UserId == user.Id).ToListAsync();
+            return View(presents);
+        }
+        public async Task<IActionResult> DeleteBasket(int Id){
+            var basket = await _context.Baskets.FindAsync(Id);
+            _context.Baskets.Remove(basket);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("MyBasket");
+        }
     }
 }

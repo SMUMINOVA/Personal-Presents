@@ -1,0 +1,43 @@
+@model List<Basket>
+
+@{
+    Layout = "_UserLayout";
+}
+
+
+<table class="table table-striped table-inverse">
+    <tr class="text-center">
+        <thead >My Basket</thead>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th>Count</th>
+        <th>Price</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @if(Model.Count > 0){
+        @foreach (var item in Model)
+        {
+            <tr>
+                <a asp-action="GetPresent" asp-controller="User" asp-route-Id="@item.UserId">
+                    <td>@item.Name</td>
+                </a>
+                <td>@item.Count</td>
+                <td>@item.Price</td>
+                <td>
+                    <a asp-action="DeleteBasket" asp-controller="User" asp-route-Id="@item.Id">Delete</a>
+                </td>
+                <td>
+                    <a asp-action="Buy" asp-controller="User" asp-route-Id="@item.Id">Buy</a>
+                </td>
+            </tr>
+        }
+    }
+    else{
+        <tr class="text-center">
+            <th colspan="8">Empty</th>
+        </tr>
+    }
+    
+</table>
