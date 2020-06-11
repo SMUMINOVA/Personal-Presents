@@ -4,7 +4,7 @@
     Layout = "_UserLayout";
 }
 
-<div class="row mt-5 mb-2"></div>
+<div class="row mt-5 mb-2">
 @foreach (var item in Model)
 {
     <div class="col-md-3">
@@ -14,3 +14,4 @@
         <p><a class="btn btn-success" asp-action="ToBasket" asp-controller="User" asp-route-Id="@item.Id">To Basket</a></p>
     </div>
 }
+</div>

@@ -8,17 +8,17 @@
     <div class="validation" asp-validation-summary="ModelOnly"></div>
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <div>
-        <div>
-            <input type="text" asp-for="Email" class="form-control" placeholder="Email address">
+        <div class="row">
+            <input type="text" asp-for="Email" class=" form-control " placeholder="Email address">
             <span asp-validation-for="Email"></span>
         </div>
-        <div>
-            <input type="text" asp-for="Password" class="form-control" placeholder="Password">
+        <div class="row">
+            <input type="text" asp-for="Password" class=" form-control" placeholder="Password">
             <span asp-validation-for="Password" ></span>
         </div>
-        <div>
-            <input type="submit" value="Sign in" class="btn btn-lg btn-primary btn-block">
+        <div class="row">
+            <input type="submit" value="Sign in" class=" btn btn-lg btn-primary btn-block">
         </div>
     </div>
 </form>
-<a asp-action="Register" asp-controller="Account" class="btn btn-lg btn-danger btn-block">Sign up</a>
+<a asp-action="Register" asp-controller="Account" class=" btn btn-lg btn-danger btn-block">Sign up</a>

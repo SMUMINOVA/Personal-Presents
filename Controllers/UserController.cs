@@ -22,7 +22,7 @@ namespace PersonalPresents.Controllers
             return View(presents);
         }
         public async Task<IActionResult> GetPresent(int Id){
-            var present = await _context.Presents.FindAsync(Id);
+            var present = await _context.Presents.Where(x => x.Id == Id).ToListAsync();
             return View("GetAllPresents", present);
         }
         [HttpGet]
