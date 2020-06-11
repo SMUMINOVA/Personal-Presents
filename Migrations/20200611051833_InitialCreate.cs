@@ -178,6 +178,7 @@ namespace PersonalPresents.Migrations
                     Name = table.Column<string>(nullable: true),
                     Price = table.Column<double>(nullable: false),
                     Count = table.Column<int>(nullable: false),
+                    PresentsId = table.Column<int>(nullable: false),
                     Description = table.Column<string>(nullable: true),
                     UserId = table.Column<int>(nullable: false)
                 },
@@ -198,7 +199,9 @@ namespace PersonalPresents.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Presents = table.Column<string>(nullable: true),
+                    Present = table.Column<string>(nullable: true),
+                    Count = table.Column<int>(nullable: false),
+                    PresentsId = table.Column<int>(nullable: false),
                     Price = table.Column<double>(nullable: false),
                     Adress = table.Column<string>(nullable: true),
                     PhoneNumber = table.Column<string>(nullable: true),
@@ -226,6 +229,11 @@ namespace PersonalPresents.Migrations
             migrationBuilder.InsertData(
                 table: "Festivals",
                 columns: new[] { "Id", "Name" },
+                values: new object[] { 16, "Doesn't matter" });
+
+            migrationBuilder.InsertData(
+                table: "Festivals",
+                columns: new[] { "Id", "Name" },
                 values: new object[] { 15, "Other" });
 
             migrationBuilder.InsertData(
@@ -241,7 +249,7 @@ namespace PersonalPresents.Migrations
             migrationBuilder.InsertData(
                 table: "Festivals",
                 columns: new[] { "Id", "Name" },
-                values: new object[] { 12, "Birth of a child" });
+                values: new object[] { 11, "Housewarming" });
 
             migrationBuilder.InsertData(
                 table: "Festivals",
@@ -261,12 +269,12 @@ namespace PersonalPresents.Migrations
             migrationBuilder.InsertData(
                 table: "Festivals",
                 columns: new[] { "Id", "Name" },
-                values: new object[] { 7, "Wedding" });
+                values: new object[] { 12, "Birth of a child" });
 
             migrationBuilder.InsertData(
                 table: "Festivals",
                 columns: new[] { "Id", "Name" },
-                values: new object[] { 11, "Housewarming" });
+                values: new object[] { 6, "Anniversary" });
 
             migrationBuilder.InsertData(
                 table: "Festivals",
@@ -296,7 +304,7 @@ namespace PersonalPresents.Migrations
             migrationBuilder.InsertData(
                 table: "Festivals",
                 columns: new[] { "Id", "Name" },
-                values: new object[] { 6, "Anniversary" });
+                values: new object[] { 7, "Wedding" });
 
             migrationBuilder.InsertData(
                 table: "Genders",
@@ -309,29 +317,14 @@ namespace PersonalPresents.Migrations
                 values: new object[] { 2, "Woman" });
 
             migrationBuilder.InsertData(
-                table: "Interests",
+                table: "Genders",
                 columns: new[] { "Id", "Name" },
-                values: new object[] { 5, "Cars" });
+                values: new object[] { 3, "Doesn't matter" });
 
             migrationBuilder.InsertData(
                 table: "Interests",
                 columns: new[] { "Id", "Name" },
-                values: new object[] { 8, "Other" });
-
-            migrationBuilder.InsertData(
-                table: "Interests",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 7, "For home" });
-
-            migrationBuilder.InsertData(
-                table: "Interests",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 1, "Traveler" });
-
-            migrationBuilder.InsertData(
-                table: "Interests",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 2, "Geek" });
+                values: new object[] { 4, "Athlete" });
 
             migrationBuilder.InsertData(
                 table: "Interests",
@@ -341,7 +334,27 @@ namespace PersonalPresents.Migrations
             migrationBuilder.InsertData(
                 table: "Interests",
                 columns: new[] { "Id", "Name" },
-                values: new object[] { 4, "Athlete" });
+                values: new object[] { 2, "Geek" });
+
+            migrationBuilder.InsertData(
+                table: "Interests",
+                columns: new[] { "Id", "Name" },
+                values: new object[] { 7, "For home" });
+
+            migrationBuilder.InsertData(
+                table: "Interests",
+                columns: new[] { "Id", "Name" },
+                values: new object[] { 8, "Other" });
+
+            migrationBuilder.InsertData(
+                table: "Interests",
+                columns: new[] { "Id", "Name" },
+                values: new object[] { 5, "Cars" });
+
+            migrationBuilder.InsertData(
+                table: "Interests",
+                columns: new[] { "Id", "Name" },
+                values: new object[] { 1, "Traveler" });
 
             migrationBuilder.InsertData(
                 table: "Interests",
@@ -357,6 +370,11 @@ namespace PersonalPresents.Migrations
                 table: "Payments",
                 columns: new[] { "Id", "Name" },
                 values: new object[] { 2, "card" });
+
+            migrationBuilder.InsertData(
+                table: "Professions",
+                columns: new[] { "Id", "Name" },
+                values: new object[] { 14, "Doesn't matter" });
 
             migrationBuilder.InsertData(
                 table: "Professions",
@@ -426,6 +444,11 @@ namespace PersonalPresents.Migrations
             migrationBuilder.InsertData(
                 table: "RoleForUsers",
                 columns: new[] { "Id", "Name" },
+                values: new object[] { 15, "Doesn't matter" });
+
+            migrationBuilder.InsertData(
+                table: "RoleForUsers",
+                columns: new[] { "Id", "Name" },
                 values: new object[] { 14, "Other" });
 
             migrationBuilder.InsertData(
@@ -456,17 +479,17 @@ namespace PersonalPresents.Migrations
             migrationBuilder.InsertData(
                 table: "RoleForUsers",
                 columns: new[] { "Id", "Name" },
-                values: new object[] { 8, "Husbend" });
+                values: new object[] { 6, "Grandfather" });
+
+            migrationBuilder.InsertData(
+                table: "RoleForUsers",
+                columns: new[] { "Id", "Name" },
+                values: new object[] { 7, "Wife" });
 
             migrationBuilder.InsertData(
                 table: "RoleForUsers",
                 columns: new[] { "Id", "Name" },
                 values: new object[] { 5, "Grandmother" });
-
-            migrationBuilder.InsertData(
-                table: "RoleForUsers",
-                columns: new[] { "Id", "Name" },
-                values: new object[] { 6, "Grandfather" });
 
             migrationBuilder.InsertData(
                 table: "RoleForUsers",
@@ -491,7 +514,7 @@ namespace PersonalPresents.Migrations
             migrationBuilder.InsertData(
                 table: "RoleForUsers",
                 columns: new[] { "Id", "Name" },
-                values: new object[] { 7, "Wife" });
+                values: new object[] { 8, "Husbend" });
 
             migrationBuilder.InsertData(
                 table: "Roles",

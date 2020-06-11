@@ -60,22 +60,27 @@ namespace PersonalPresents.Controllers
             var p = await _context.Presents.FindAsync(Id);
             var basket = new Basket(){
                 Name = p.Name,
-                Img = p.Img,
-                PresentsId = p.Id
+                PresentsId = p.Id,
+                Price = p.Price,
+                Description = p.Description
             };
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
+            basket.UserId = user.Id;
+            _context.Baskets.Add(basket);
+            await _context.SaveChangesAsync();
+            ViewBag.Id = basket.Id;
             return View(basket);
         }
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> ToBasket(Basket b){
-            b.Price = b.Price * b.Count;
+            var basket = await _context.Baskets.FindAsync(b.Id);
+            basket.Count = b.Count;
+            basket.Price = basket.Price * b.Count;
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
-            b.UserId = user.Id;
-            _context.Baskets.Add(b);
+            user.baskets.Add(basket);
             await _context.SaveChangesAsync();
-            user.baskets.Add(b);
-            await _context.SaveChangesAsync();
-            return RedirectToAction("Basket", "User");
+            return RedirectToAction("MyBasket", "User");
         }
         [Authorize]
         public async Task<IActionResult> MyBasket(){

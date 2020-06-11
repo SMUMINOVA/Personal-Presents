@@ -11,6 +11,6 @@
         <h3>@item.Name</h3>
         <p>@item.Description</p>
         <p>@item.Price.ToString("c")</p>
-        <p><a class="btn btn-success" asp-action="Basket" asp-controller="User" asp-route-Id="@item.Id">To Basket</a></p>
+        <p><a class="btn btn-success" asp-action="ToBasket" asp-controller="User" asp-route-Id="@item.Id">To Basket</a></p>
     </div>
 }

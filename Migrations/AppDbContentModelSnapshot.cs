@@ -31,6 +31,9 @@ namespace PersonalPresents.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("PresentsId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<double>("Price")
                         .HasColumnType("REAL");
 
@@ -53,6 +56,9 @@ namespace PersonalPresents.Migrations
                     b.Property<string>("Adress")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("Count")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
@@ -62,8 +68,11 @@ namespace PersonalPresents.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Presents")
+                    b.Property<string>("Present")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("PresentsId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<double>("Price")
                         .HasColumnType("REAL");
@@ -194,6 +203,11 @@ namespace PersonalPresents.Migrations
                         {
                             Id = 15,
                             Name = "Other"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Name = "Doesn't matter"
                         });
                 });
 
@@ -220,6 +234,11 @@ namespace PersonalPresents.Migrations
                         {
                             Id = 2,
                             Name = "Woman"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Doesn't matter"
                         });
                 });
 
@@ -402,6 +421,11 @@ namespace PersonalPresents.Migrations
                         {
                             Id = 13,
                             Name = "Other"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Name = "Doesn't matter"
                         });
                 });
 
@@ -488,6 +512,11 @@ namespace PersonalPresents.Migrations
                         {
                             Id = 14,
                             Name = "Other"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Name = "Doesn't matter"
                         });
                 });
 
