@@ -93,36 +93,33 @@ namespace PersonalPresents.Controllers
             _context.Baskets.Remove(basket);
             await _context.SaveChangesAsync();
             return RedirectToAction("MyBasket");
-        }
-        [Authorize]
+        }[Authorize]
         [HttpGet]
         public async Task<IActionResult> Buy(int Id){
-            var basket = await _context.Baskets.FindAsync(Id);
             ViewBag.BasketId = Id;
             ViewBag.Payment = await _context.Payments.ToListAsync();
+            return View();
+        }
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Buy(Order o){
+            var basket = await _context.Baskets.FindAsync(o.Id);
             var order = new Order(){
                 Present = basket.Name,
                 Count = basket.Count,
                 PresentsId = basket.PresentsId,
                 Price = basket.Price,
                 Date = DateTime.Now,
+                Adress = o.Adress,
+                PhoneNumber = o.PhoneNumber,
+                PaymentId = o.PaymentId
             };
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
-            o.UserId = user.Id;
-            _context.Orders.Add(o);
+            order.UserId = user.Id;
+            _context.Orders.Add(order);
             await _context.SaveChangesAsync();
-            user.orders.Add(o);
+            user.orders.Add(order);
             await _context.SaveChangesAsync();
-            ViewBag.Id = order.Id;
-            return View(order);
-        }
-        [Authorize]
-        [HttpPost]
-        public async Task<IActionResult> Buy(Order o){
-            var order = await _context.Orders.FindAsync(o.Id);
-            order.Adress = o.Adress;
-            order.PhoneNumber = o.PhoneNumber;
-            order.PaymentId = o.PaymentId;
             return RedirectToAction("MyOrders");
         }
         [Authorize]

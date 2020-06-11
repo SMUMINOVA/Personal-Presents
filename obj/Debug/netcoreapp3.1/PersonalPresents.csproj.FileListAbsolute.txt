@@ -250,7 +250,6 @@ E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPre
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Add.cshtml.g.cs
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Change.cshtml.g.cs
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Admin/GetAllPresents.cshtml.g.cs
-/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Order.cshtml.g.cs
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/preview.cshtml.g.cs
@@ -276,3 +275,4 @@ E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPre
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.dll
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.pdb
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.genruntimeconfig.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Orders.cshtml.g.cs
