@@ -114,6 +114,7 @@ namespace PersonalPresents.Controllers
                 PhoneNumber = o.PhoneNumber,
                 PaymentId = o.PaymentId
             };
+            _context.Baskets.Remove(basket);
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
             order.UserId = user.Id;
             _context.Orders.Add(order);
