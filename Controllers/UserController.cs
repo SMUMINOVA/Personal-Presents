@@ -107,17 +107,22 @@ namespace PersonalPresents.Controllers
                 Price = basket.Price,
                 Date = DateTime.Now,
             };
-            return View(order);
-        }
-        [Authorize]
-        [HttpPost]
-        public async Task<IActionResult> Buy(Order o){
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
             o.UserId = user.Id;
             _context.Orders.Add(o);
             await _context.SaveChangesAsync();
             user.orders.Add(o);
             await _context.SaveChangesAsync();
+            ViewBag.Id = order.Id;
+            return View(order);
+        }
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Buy(Order o){
+            var order = await _context.Orders.FindAsync(o.Id);
+            order.Adress = o.Adress;
+            order.PhoneNumber = o.PhoneNumber;
+            order.PaymentId = o.PaymentId;
             return RedirectToAction("MyOrders");
         }
         [Authorize]

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Wed-разработка\\PersonalPresents\\PersonalPresents.csproj": {}
+    "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/PersonalPresents.csproj": {}
   },
   "projects": {
-    "E:\\Wed-разработка\\PersonalPresents\\PersonalPresents.csproj": {
+    "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/PersonalPresents.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Wed-разработка\\PersonalPresents\\PersonalPresents.csproj",
+        "projectUniqueName": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/PersonalPresents.csproj",
         "projectName": "PersonalPresents",
-        "projectPath": "E:\\Wed-разработка\\PersonalPresents\\PersonalPresents.csproj",
-        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "E:\\Wed-разработка\\PersonalPresents\\obj\\",
+        "projectPath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/PersonalPresents.csproj",
+        "packagesPath": "/home/sobira/.nuget/packages/",
+        "outputPath": "/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/sobira/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -78,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
         }
       }
     }

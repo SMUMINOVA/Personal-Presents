@@ -91,95 +91,188 @@
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/MyBasket.cshtml.g.cs
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/MyOrders.cshtml.g.cs
 /home/sobira/Рабочий стол/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/ToBasket.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.csprojAssemblyReference.cache
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.csproj.CoreCompileInputs.cache
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.MvcApplicationPartsAssemblyInfo.cache
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.RazorAssemblyInfo.cache
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.RazorAssemblyInfo.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.AssemblyInfoInputs.cache
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.AssemblyInfo.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.dll
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.pdb
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.TagHelpers.input.cache
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.TagHelpers.output.cache
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.RazorCoreGenerate.cache
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Add.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Change.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Admin\GetAllPresents.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Order.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\preview.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_UserLayout.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\Buy.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\GetAllPresents.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\GetInformationForPresent.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\MyBasket.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\MyOrders.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\PersonalPresents.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\ToBasket.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.RazorTargetAssemblyInfo.cache
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.RazorTargetAssemblyInfo.cs
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\appsettings.Development.json
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\appsettings.json
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\PersonalPresents.exe
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\PersonalPresents.deps.json
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\PersonalPresents.runtimeconfig.json
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\PersonalPresents.runtimeconfig.dev.json
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\PersonalPresents.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\PersonalPresents.pdb
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\PersonalPresents.Views.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\PersonalPresents.Views.pdb
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\System.Text.Json.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
-E:\Wed-разработка\PersonalPresents\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.Views.pdb
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.csproj.CopyComplete
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\staticwebassets\PersonalPresents.StaticWebAssets.Manifest.cache
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\staticwebassets\PersonalPresents.StaticWebAssets.xml
-E:\Wed-разработка\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.genruntimeconfig.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.csprojAssemblyReference.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.csproj.CoreCompileInputs.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.MvcApplicationPartsAssemblyInfo.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.RazorAssemblyInfo.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.RazorAssemblyInfo.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.AssemblyInfoInputs.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.AssemblyInfo.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.dll
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.pdb
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.TagHelpers.input.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.TagHelpers.output.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.RazorCoreGenerate.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Add.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Change.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Admin/GetAllPresents.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Order.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Shared/preview.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_AdminLayout.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_UserLayout.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/Buy.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/GetAllPresents.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/GetInformationForPresent.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/MyBasket.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/MyOrders.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/PersonalPresents.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/User/ToBasket.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.RazorTargetAssemblyInfo.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.RazorTargetAssemblyInfo.cs
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/appsettings.Development.json
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/appsettings.json
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/PersonalPresents.exe
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/PersonalPresents.deps.json
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/PersonalPresents.runtimeconfig.json
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/PersonalPresents.runtimeconfig.dev.json
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/PersonalPresents.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/PersonalPresents.pdb
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/PersonalPresents.Views.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/PersonalPresents.Views.pdb
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+E:/Wed-разработка/PersonalPresents/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.Views.pdb
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.csproj.CopyComplete
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/staticwebassets/PersonalPresents.StaticWebAssets.Manifest.cache
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/staticwebassets/PersonalPresents.StaticWebAssets.xml
+E:/Wed-разработка/PersonalPresents/obj/Debug/netcoreapp3.1/PersonalPresents.genruntimeconfig.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/appsettings.json
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/PersonalPresents
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/PersonalPresents.deps.json
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/PersonalPresents.runtimeconfig.json
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/PersonalPresents.runtimeconfig.dev.json
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/PersonalPresents.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/PersonalPresents.pdb
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/PersonalPresents.Views.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/PersonalPresents.Views.pdb
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.csprojAssemblyReference.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.csproj.CoreCompileInputs.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.MvcApplicationPartsAssemblyInfo.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.RazorAssemblyInfo.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.RazorAssemblyInfo.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.AssemblyInfoInputs.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.AssemblyInfo.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.TagHelpers.input.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.TagHelpers.output.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.RazorCoreGenerate.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Add.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Change.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Admin/GetAllPresents.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Order.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/preview.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_AdminLayout.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_UserLayout.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/User/Buy.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/User/GetAllPresents.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/User/GetInformationForPresent.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/User/MyBasket.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/User/MyOrders.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/User/PersonalPresents.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/User/ToBasket.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.RazorTargetAssemblyInfo.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.RazorTargetAssemblyInfo.cs
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.Views.pdb
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.csproj.CopyComplete
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/staticwebassets/PersonalPresents.StaticWebAssets.Manifest.cache
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/staticwebassets/PersonalPresents.StaticWebAssets.xml
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.dll
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.pdb
+/home/sobira/Рабочий стол/Wed-разработка/PersonalPresents2/obj/Debug/netcoreapp3.1/PersonalPresents.genruntimeconfig.cache
