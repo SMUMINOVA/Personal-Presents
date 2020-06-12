@@ -1,3 +1,5 @@
+using System;
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -28,24 +30,39 @@ namespace PersonalPresents.Controllers
             return View();            
         }
         [HttpPost]
-        public async Task<IActionResult> Add(Present p){
+        public async Task<IActionResult> Add(PresentViewModel p){
+            string file = Path.GetFileNameWithoutExtension(p.ImgPath.FileName);
+            string extension = Path.GetExtension(p.ImgPath.FileName);
+            file = file + DateTime.Now.ToString("yymmssfff") + extension;
+            p.Img = "~/Data/img/" + file;
             if(ModelState.IsValid){
+                Present present = new Present(){
+                    Name = p.Name,
+                    Price = p.Price,
+                    Description = p.Description,
+                    Img = p.Img,
+                    RoleId = p.RoleId,
+                    GenderId = p.GenderId,
+                    ProfessionId = p.ProfessionId,
+                    InterestId = p.InterestId,
+                    FestivalId = p.FestivalId
+                };
                 var gender = await _context.Genders.FirstOrDefaultAsync(x => x.Id == p.GenderId);
-                p.gender = gender;
+                present.gender = gender;
                 var role = await _context.RoleForUsers.FirstOrDefaultAsync(x => x.Id == p.RoleId);
-                p.role = role;
+                present.role = role;
                 var fest = await _context.Festivals.FirstOrDefaultAsync(x => x.Id == p.FestivalId);
-                p.festival = fest;
+                present.festival = fest;
                 var interest = await _context.Interests.FirstOrDefaultAsync(x => x.Id == p.InterestId);
-                p.interest = interest;
+                present.interest = interest;
                 var prof = await _context.Professions.FirstOrDefaultAsync(x => x.Id == p.ProfessionId);
-                p.profession = prof;
-                _context.Presents.Add(p);
-                gender.Presents.Add(p);
-                prof.Presents.Add(p);
-                interest.Presents.Add(p);
-                fest.Presents.Add(p);
-                role.Presents.Add(p);
+                present.profession = prof;
+                _context.Presents.Add(present);
+                gender.Presents.Add(present);
+                prof.Presents.Add(present);
+                interest.Presents.Add(present);
+                fest.Presents.Add(present);
+                role.Presents.Add(present);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("GetAllPresents");
             }

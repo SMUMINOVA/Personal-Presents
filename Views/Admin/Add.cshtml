@@ -1,4 +1,4 @@
-@model Present
+@model PresentViewModel
 
 @{
     Layout  = "_AdminLayout";
@@ -86,6 +86,11 @@
     </select>
 </div>
 </div><br>
+<div class = "row">
+    <div class = "col-md-10">
+        <input asp-for="ImgPath" type="file" placeholder="Image">
+    </div>
+</div>  
 <div class = "row">
     <div class = "col-md-10">
         <input type="submit" class=" btn btn-primary" value="Add">
