@@ -4,11 +4,11 @@
     Layout = "_AdminLayout";
 }
 
-<div class="row mt-5 mb-2"></div>
+<div class="row"></div>
 @foreach (var item in Model)
 {
     <div class="col-md-3">
-        <img src="@Url.Content(item.Img)" alt="" width="200" height="200">
+        <img class="img-thumbnail" src="@("/img/" + item.Img)" alt="">
         <h3>@item.Name</h3>
         <p>@item.Description</p>
         <p>@item.Price.ToString("c")</p>

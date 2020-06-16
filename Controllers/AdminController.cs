@@ -1,8 +1,11 @@
 using System;
 using System.IO;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting.Internal;
 using PersonalPresents.DataBase;
 using PersonalPresents.Models.PresentModels;
 
@@ -11,10 +14,13 @@ namespace PersonalPresents.Controllers
     public class AdminController : Controller
     {
         private AppDbContent _context;
-        public AdminController(AppDbContent context)
+        private IWebHostEnvironment _hostEnvironment;
+        public AdminController(AppDbContent context, IWebHostEnvironment hostEnvironment)
         {
+            _hostEnvironment = hostEnvironment;
             _context = context;
         }
+        [Authorize(Roles = "admin")]
         [HttpGet]
         public async Task<IActionResult> GetAllPresents(){
             var presetns = await _context.Presents.ToListAsync();
@@ -30,43 +36,33 @@ namespace PersonalPresents.Controllers
             return View();            
         }
         [HttpPost]
-        public async Task<IActionResult> Add(PresentViewModel p){
-            string file = Path.GetFileNameWithoutExtension(p.ImgPath.FileName);
-            string extension = Path.GetExtension(p.ImgPath.FileName);
+        public async Task<IActionResult> Add(Present p){
+            string wwRootPath = _hostEnvironment.WebRootPath;
+            string file = Path.GetFileNameWithoutExtension(p.ImgFile.FileName);
+            string extension = Path.GetExtension(p.ImgFile.FileName);
             file = file + DateTime.Now.ToString("yymmssfff") + extension;
-            p.Img = "~/Data/img/" + file;
-            if(ModelState.IsValid){
-                Present present = new Present(){
-                    Name = p.Name,
-                    Price = p.Price,
-                    Description = p.Description,
-                    Img = p.Img,
-                    RoleId = p.RoleId,
-                    GenderId = p.GenderId,
-                    ProfessionId = p.ProfessionId,
-                    InterestId = p.InterestId,
-                    FestivalId = p.FestivalId
-                };
-                var gender = await _context.Genders.FirstOrDefaultAsync(x => x.Id == p.GenderId);
-                present.gender = gender;
-                var role = await _context.RoleForUsers.FirstOrDefaultAsync(x => x.Id == p.RoleId);
-                present.role = role;
-                var fest = await _context.Festivals.FirstOrDefaultAsync(x => x.Id == p.FestivalId);
-                present.festival = fest;
-                var interest = await _context.Interests.FirstOrDefaultAsync(x => x.Id == p.InterestId);
-                present.interest = interest;
-                var prof = await _context.Professions.FirstOrDefaultAsync(x => x.Id == p.ProfessionId);
-                present.profession = prof;
-                _context.Presents.Add(present);
-                gender.Presents.Add(present);
-                prof.Presents.Add(present);
-                interest.Presents.Add(present);
-                fest.Presents.Add(present);
-                role.Presents.Add(present);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("GetAllPresents");
-            }
-            return BadRequest(ModelState);
+            p.Img = file;
+            var path = Path.Combine(wwRootPath + "/img/", file);
+            var fileStream = new FileStream(path, FileMode.Create);
+            await p.ImgFile.CopyToAsync(fileStream);
+            var gender = await _context.Genders.FirstOrDefaultAsync(x => x.Id == p.GenderId);
+            p.gender = gender;
+            var role = await _context.RoleForUsers.FirstOrDefaultAsync(x => x.Id == p.RoleId);
+            p.role = role;
+            var fest = await _context.Festivals.FirstOrDefaultAsync(x => x.Id == p.FestivalId);
+            p.festival = fest;
+            var interest = await _context.Interests.FirstOrDefaultAsync(x => x.Id == p.InterestId);
+            p.interest = interest;
+            var prof = await _context.Professions.FirstOrDefaultAsync(x => x.Id == p.ProfessionId);
+            p.profession = prof;
+            _context.Presents.Add(p);
+            gender.Presents.Add(p);
+            prof.Presents.Add(p);
+            interest.Presents.Add(p);
+            fest.Presents.Add(p);
+            role.Presents.Add(p);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("GetAllPresents");
         }
         [HttpGet]
         public async Task<IActionResult> Change(int Id){

@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Http;
+
 namespace PersonalPresents.Models.PresentModels
 {
     public class Present
@@ -8,6 +11,8 @@ namespace PersonalPresents.Models.PresentModels
         public string Description{get;set;}
         
         public string Img{get;set;}
+        [NotMapped]
+        public IFormFile ImgFile{get;set;}
 
         public int RoleId{get;set;}
         public RoleForUser role{get;set;}

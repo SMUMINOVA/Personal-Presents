@@ -1,5 +1,5 @@
 {
-  "FilePath": "e:\\PersonalPresents\\PersonalPresents.csproj",
+  "FilePath": "e:\\New folder\\PersonalPresents\\PersonalPresents.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,113 +20521,113 @@
   "RootNamespace": "PersonalPresents",
   "Documents": [
     {
-      "FilePath": "e:\\PersonalPresents\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\User\\GetInformationForPresent.cshtml",
-      "TargetPath": "Views\\User\\GetInformationForPresent.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\User\\PersonalPresents.cshtml",
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\PersonalPresents.cshtml",
       "TargetPath": "Views\\User\\PersonalPresents.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\PersonalPresents\\Views\\User\\GetAllPresents.cshtml",
-      "TargetPath": "Views\\User\\GetAllPresents.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\Shared\\preview.cshtml",
-      "TargetPath": "Views\\Shared\\preview.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\User\\ToBasket.cshtml",
-      "TargetPath": "Views\\User\\ToBasket.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\Shared\\_AdminLayout.cshtml",
-      "TargetPath": "Views\\Shared\\_AdminLayout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\Admin\\GetAllPresents.cshtml",
-      "TargetPath": "Views\\Admin\\GetAllPresents.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\Admin\\Add.cshtml",
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Admin\\Add.cshtml",
       "TargetPath": "Views\\Admin\\Add.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\PersonalPresents\\Views\\User\\Buy.cshtml",
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\GetInformationForPresent.cshtml",
+      "TargetPath": "Views\\User\\GetInformationForPresent.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\Buy.cshtml",
       "TargetPath": "Views\\User\\Buy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\PersonalPresents\\Views\\Account\\Register.cshtml",
-      "TargetPath": "Views\\Account\\Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\Shared\\_UserLayout.cshtml",
-      "TargetPath": "Views\\Shared\\_UserLayout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\Account\\Login.cshtml",
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Account\\Login.cshtml",
       "TargetPath": "Views\\Account\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\PersonalPresents\\Views\\Admin\\Orders.cshtml",
-      "TargetPath": "Views\\Admin\\Orders.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\User\\MyBasket.cshtml",
-      "TargetPath": "Views\\User\\MyBasket.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\PersonalPresents\\Views\\Admin\\Change.cshtml",
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Admin\\Change.cshtml",
       "TargetPath": "Views\\Admin\\Change.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\PersonalPresents\\Views\\_ViewImports.cshtml",
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\ToBasket.cshtml",
+      "TargetPath": "Views\\User\\ToBasket.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Admin\\Orders.cshtml",
+      "TargetPath": "Views\\Admin\\Orders.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Shared\\_UserLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_UserLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\PersonalPresents\\Views\\User\\MyOrders.cshtml",
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\MyOrders.cshtml",
       "TargetPath": "Views\\User\\MyOrders.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\GetAllPresents.cshtml",
+      "TargetPath": "Views\\User\\GetAllPresents.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Shared\\preview.cshtml",
+      "TargetPath": "Views\\Shared\\preview.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Shared\\_AdminLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_AdminLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\MyBasket.cshtml",
+      "TargetPath": "Views\\User\\MyBasket.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Admin\\GetAllPresents.cshtml",
+      "TargetPath": "Views\\Admin\\GetAllPresents.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],

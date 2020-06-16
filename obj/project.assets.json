@@ -1194,11 +1194,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PersonalPresents\\PersonalPresents.csproj",
+      "projectUniqueName": "E:\\New folder\\PersonalPresents\\PersonalPresents.csproj",
       "projectName": "PersonalPresents",
-      "projectPath": "E:\\PersonalPresents\\PersonalPresents.csproj",
+      "projectPath": "E:\\New folder\\PersonalPresents\\PersonalPresents.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "E:\\PersonalPresents\\obj\\",
+      "outputPath": "E:\\New folder\\PersonalPresents\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

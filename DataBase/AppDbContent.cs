@@ -22,6 +22,7 @@ namespace PersonalPresents.DataBase
         public DbSet<Basket> Baskets{get;set;}
         public DbSet<Payment> Payments{get;set;}
         public AppDbContent(DbContextOptions<AppDbContent> op) : base(op){
+            Database.EnsureCreated();
         }
         protected override void OnModelCreating(ModelBuilder build){
             build.Entity<Role>().HasData(
