@@ -4,16 +4,38 @@
     Layout = "_UserLayout";
 }
 
-<div class="row ">
-@foreach (var item in Model)
-{
-    <div class="col-md-3">
-        <a asp-action="GetPresent" asp-controller="User" asp-route-Id="@item.PresentsId"><h3>@item.Present</h3></a>        
-        <p>Count: @item.Count</p>
-        <p>Price: @item.Price.ToString("c")</p>
-        <p>Adress: @item.Adress</p>
-        <p>Phone: @item.PhoneNumber</p>
-        <p>Date: @item.Date</p>
-    </div>
-}
-</div>
+
+<table class="table table-striped table-inverse">
+    <tr class="text-center">
+        <thead >List of orders</thead>
+    </tr>
+    <tr>
+        <th>Presents</th>
+        <th>Count</th>
+        <th>Price</th>
+        <th>Adress</th>
+        <th>Phone number</th>
+        <th>Date</th>
+    </tr>
+    @if(Model.Count > 0){
+        @foreach (var item in Model)
+        {
+            <tr>
+                <a asp-action="GetPresent" asp-controller="User" asp-route-Id="@item.PresentsId">
+                    <td>@item.Present</td>
+                </a>
+                <td>@item.Count</td>
+                <td>@item.Price</td>
+                <td>@item.Adress</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.Date</td>
+            </tr>
+        }
+    }
+    else{
+        <tr class="text-center">
+            <th colspan="8">Empty</th>
+        </tr>
+    }
+    
+</table>

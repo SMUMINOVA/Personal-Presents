@@ -26,7 +26,7 @@ namespace PersonalPresents.Controllers
             var presetns = await _context.Presents.ToListAsync();
             return View(presetns);
         }
-        [HttpGet]
+        [HttpGet] 
         public async Task<IActionResult> Add(){
             ViewBag.Gender = await _context.Genders.ToListAsync();
             ViewBag.Festival = await _context.Festivals.ToListAsync();

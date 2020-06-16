@@ -6,17 +6,17 @@
 
 <form method = "post" asp-action="Buy" asp-controller="User">
 <div class = "row">
-    <div class = "col-md-10">
+    <div class = "col-md-5">
         <label asp-for="Id" value="@ViewBag.BasketId"></label>
     </div>
 </div> 
 <div class = "row">
-    <div class = "col-md-10">
+    <div class = "col-md-5">
         <input asp-for="Adress" type="text" placeholder="Adress">
     </div>
 </div>    
 <div class = "row">
-    <div class = "col-md-10">
+    <div class = "col-md-5">
         <input asp-for="PhoneNumber" type="text" placeholder="Phone number">
     </div>
 </div>
@@ -34,7 +34,7 @@
 </div>
 </div><br>
 <div class = "row">
-    <div class = "col-md-10">
+    <div class = "col-md-4">
         <input type="submit" class=" btn btn-success" value="Buy">
     </div>
 </div>
