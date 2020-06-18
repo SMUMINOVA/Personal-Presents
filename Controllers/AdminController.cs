@@ -67,11 +67,6 @@ namespace PersonalPresents.Controllers
         [HttpGet]
         public async Task<IActionResult> Change(int Id){
             Present p = await _context.Presents.FindAsync(Id);
-            //ViewBag.Gender = await _context.Genders.ToListAsync();
-            //ViewBag.Festival = await _context.Festivals.ToListAsync();
-            //ViewBag.Interest = await _context.Interests.ToListAsync();
-            //ViewBag.Profession = await _context.Professions.ToListAsync();
-            //ViewBag.RoleForUser = await _context.RoleForUsers.ToListAsync();
             return View(p);
         }
         [HttpPost]
@@ -80,11 +75,6 @@ namespace PersonalPresents.Controllers
             present.Name = p.Name;
             present.Price = p.Price;
             present.Description = p.Description;
-            //present.GenderId = p.GenderId;
-            //present.FestivalId = p.FestivalId;
-            //present.RoleId = p.RoleId;
-            //present.InterestId = p.InterestId;
-            //present.ProfessionId = p.ProfessionId;
             await _context.SaveChangesAsync();
             return RedirectToAction("GetAllPresents");
         }

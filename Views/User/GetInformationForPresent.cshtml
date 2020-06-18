@@ -1,4 +1,4 @@
-@model Present
+@model CategoriesForPersonalPresents
 
 @{
     Layout  = "_UserLayout";
@@ -8,7 +8,7 @@
  
 <div class = "row">
     <div class = "col-md-10">
-        <input asp-for="Price" type="number" placeholder="Max Price">
+        <input asp-for="Price" type="number" placeholder="Max Price" value="100">
     </div>
 </div><br>
 <div class = "row">
@@ -52,13 +52,16 @@
 </div><br>
 <div class = "row">
     <div class = "col-md-10">
-        <label for="InterestId">Interest</label>
+        <label for="InterestId">Interests: </label>
     </div>
 <div class = "col-md-5">
     <select class="form-control form-control-lg" name="InterestId" asp-for="InterestId" >
         @foreach (var item in ViewBag.Interest)
         {
-            <option value="@item.Id">@item.Name</option>
+            <div>
+                <input asp-for="InterestId" type="checkbox" value="@item.Id" required>
+                <label for="horns">@item.Name</label>
+            </div>
         }
     </select>
 </div>
