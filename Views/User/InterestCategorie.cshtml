@@ -1,0 +1,17 @@
+@model List<Interest>
+
+@{
+    Layout = "_UserLayout";
+} 
+<form action="InterestCategorie" method="post" asp-controller="User">
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class = "col-md-5">
+            <input asp-for="@item.Id" type="checkbox" value="@item.Id" required>
+            <label>@item.Name</label>
+        </div>
+    }
+</div>
+</div><br>
+</form>

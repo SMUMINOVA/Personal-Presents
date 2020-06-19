@@ -20521,6 +20521,11 @@
   "RootNamespace": "PersonalPresents",
   "Documents": [
     {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\Categories.cshtml",
+      "TargetPath": "Views\\User\\Categories.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\PersonalPresents.cshtml",
       "TargetPath": "Views\\User\\PersonalPresents.cshtml",
       "FileKind": "mvc"
@@ -20528,6 +20533,11 @@
     {
       "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Admin\\Add.cshtml",
       "TargetPath": "Views\\Admin\\Add.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\FestivalCategorie.cshtml",
+      "TargetPath": "Views\\User\\FestivalCategorie.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20586,6 +20596,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\ProfessionCategorie.cshtml",
+      "TargetPath": "Views\\User\\ProfessionCategorie.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -20606,8 +20621,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Shared\\preview.cshtml",
-      "TargetPath": "Views\\Shared\\preview.cshtml",
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\GenderCategorie.cshtml",
+      "TargetPath": "Views\\User\\GenderCategorie.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20621,8 +20636,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\RoleCategorie.cshtml",
+      "TargetPath": "Views\\User\\RoleCategorie.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\New folder\\PersonalPresents\\Views\\Admin\\GetAllPresents.cshtml",
       "TargetPath": "Views\\Admin\\GetAllPresents.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\New folder\\PersonalPresents\\Views\\User\\InterestCategorie.cshtml",
+      "TargetPath": "Views\\User\\InterestCategorie.cshtml",
       "FileKind": "mvc"
     },
     {

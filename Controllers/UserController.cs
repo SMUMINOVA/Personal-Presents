@@ -127,5 +127,55 @@ namespace PersonalPresents.Controllers
             var orders = await _context.Orders.Where(x => x.UserId == user.Id).ToListAsync();
             return View(orders);
         }
+        public async Task<IActionResult> GenderCatagorie(){
+            var gender = await _context.Genders.ToListAsync();
+            return View(gender);
+        }
+        [HttpPost]
+        public async Task<IActionResult> GenderCatagorie(int Id){
+            var presents = await _context.Presents.Where(x => x.GenderId == Id || x.GenderId == 3).ToListAsync();
+            return View("GetAllPresents", presents);
+        }
+        public async Task<IActionResult> RoleCategorie(){
+            var role = await _context.RoleForUsers.ToListAsync();
+            return View(role);
+        }
+        [HttpPost]
+        public async Task<IActionResult> RoleCategorie(int Id){
+            var presents = await _context.Presents.Where(x => x.RoleId == Id || x.RoleId == 15).ToListAsync();
+            return View("GetAllPresents", presents);
+        }
+        public async Task<IActionResult> FestivalCategorie(){
+            var fest = await _context.Festivals.ToListAsync();
+            return View(fest);
+        }
+        [HttpPost]
+        public async Task<IActionResult> FestivalCategorie(int Id){
+            var presents = await _context.Presents.Where(x => x.FestivalId == Id || x.FestivalId == 16).ToListAsync();
+            return View("GetAllPresents", presents);
+        }
+        public async Task<IActionResult> InterestCategorie(){
+            var interests = await _context.Festivals.ToListAsync();
+            return View(interests);
+        }
+        [HttpPost]
+        public async Task<IActionResult> InterestCategorie(List<int> Id){
+            List<Present> presents = new List<Present>();
+            foreach(var id in Id){
+                var present = await _context.Presents.Where(x => x.FestivalId == id).ToListAsync();
+                presents = presents.Union(present).ToList();
+            }
+            return View("GetAllPresents", presents);
+        }
+        public async Task<IActionResult> ProfessionCategorie(){
+            var profession = await _context.Professions.ToListAsync();
+            return View(profession);
+        }
+        [HttpPost]
+        public async Task<IActionResult> ProfessionCategorie(int Id){
+            var presents = await _context.Presents.Where(x => x.ProfessionId == Id || x.ProfessionId == 14).ToListAsync();
+            return View("GetAllPresents", presents);
+        }
+
     }
 }

@@ -55,15 +55,13 @@
         <label for="InterestId">Interests: </label>
     </div>
 <div class = "col-md-5">
-    <select class="form-control form-control-lg" name="InterestId" asp-for="InterestId" >
-        @foreach (var item in ViewBag.Interest)
-        {
-            <div>
-                <input asp-for="InterestId" type="checkbox" value="@item.Id" required>
-                <label for="horns">@item.Name</label>
-            </div>
-        }
-    </select>
+    @foreach (var item in ViewBag.Interest)
+    {
+        <div>
+            <input asp-for="InterestId" type="checkbox" value="@item.Id" required>
+            <label for="horns">@item.Name</label>
+        </div>
+    }
 </div>
 </div><br>
 <div class = "row">
