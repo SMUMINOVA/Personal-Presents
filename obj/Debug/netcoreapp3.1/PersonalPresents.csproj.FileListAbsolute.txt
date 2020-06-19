@@ -529,7 +529,6 @@ E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Admin\GetAllP
 E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Orders.cshtml.g.cs
 E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\preview.cshtml.g.cs
 E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
 E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_UserLayout.cshtml.g.cs
@@ -552,3 +551,9 @@ E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\staticwebassets\PersonalP
 E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.dll
 E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.pdb
 E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\PersonalPresents.genruntimeconfig.cache
+E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\Categories.cshtml.g.cs
+E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\FestivalCategorie.cshtml.g.cs
+E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\GenderCategorie.cshtml.g.cs
+E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\InterestCategorie.cshtml.g.cs
+E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\ProfessionCategorie.cshtml.g.cs
+E:\New folder\PersonalPresents\obj\Debug\netcoreapp3.1\Razor\Views\User\RoleCategorie.cshtml.g.cs

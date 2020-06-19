@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav id="nav" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PersonalPresents</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -17,19 +17,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="menu" class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="PersonalPresents">Personal Present</a>
-                        </li>
-                        <li class="menu-item nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Categories">Categories</a>
-                            <ul class="submenu">
-                                <li class="submenu-item"><a href="GenderCategorie">Gender</a></li>
-                                <li class="submenu-item"><a href="RoleCategorie">Role</a></li>
-                                <li class="submenu-item"><a href="FestivalCategorie">Festival</a></li>
-                                <li class="submenu-item"><a href="InterestCategorie">Interests</a></li>
-                                <li class="submenu-item"><a href="ProfessionCategorie">Profession</a></li>
-                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="GetAllPresents">All presents</a>
@@ -51,29 +41,6 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
-            <script>
-                var nav = document.getElementById('nav');
-                nav.addEventListener('click', function(e) {
-                  var target = e.target;
-
-                  var targetParent = target.closest('.menu-item');
-
-                  if (targetParent) {
-                    var subm = targetParent.getElementsByClassName('submenu')[0];
-                    close();
-                    if (subm) {
-                      subm.style.display = 'block';
-                    }
-                  }
-                });
-
-                function close() {
-                  var s = document.getElementsByClassName('submenu');
-                  for (var i = 0; i < s.length; i++) {
-                    s[i].style.display = 'none';
-                  }
-                }
-            </script>
         </main>
     </div>
 

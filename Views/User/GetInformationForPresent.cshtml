@@ -8,7 +8,7 @@
  
 <div class = "row">
     <div class = "col-md-10">
-        <input asp-for="Price" type="number" placeholder="Max Price" value="100">
+        <input asp-for="Price" type="number" placeholder="Max Price">
     </div>
 </div><br>
 <div class = "row">
@@ -48,20 +48,6 @@
             <option value="@item.Id">@item.Name</option>
         }
     </select>
-</div>
-</div><br>
-<div class = "row">
-    <div class = "col-md-10">
-        <label for="InterestId">Interests: </label>
-    </div>
-<div class = "col-md-5">
-    @foreach (var item in ViewBag.Interest)
-    {
-        <div>
-            <input asp-for="InterestId" type="checkbox" value="@item.Id" required>
-            <label for="horns">@item.Name</label>
-        </div>
-    }
 </div>
 </div><br>
 <div class = "row">

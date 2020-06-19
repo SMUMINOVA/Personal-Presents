@@ -3,15 +3,12 @@
 @{
     Layout = "_UserLayout";
 } 
-<form action="InterestCategorie" method="post" asp-controller="User">
-<div class="row">
+
+<div class = "row justify-content-center">
     @foreach (var item in Model)
     {
-        <div class = "col-md-5">
-            <input asp-for="@item.Id" type="checkbox" value="@item.Id" required>
-            <label>@item.Name</label>
+        <div class = "col-md-3">
+            <a asp-action="InterestCategorie" asp-controller="User" method="post" asp-route-Id="@item.Id">@item.Name</a>
         </div>
     }
 </div>
-</div><br>
-</form>

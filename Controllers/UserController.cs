@@ -36,20 +36,16 @@ namespace PersonalPresents.Controllers
             return View("GetInformationForPresent"); 
         }
         [HttpPost]
-        public async Task<IActionResult> PersonalPresents(CategoriesForPersonalPresents p){
+        public async Task<IActionResult> PersonalPresents(Present p){
             var present = await _context.Presents.Where( x => x.Price <= p.Price).ToListAsync();
             var ByGender = present.Where(x => x.GenderId == p.GenderId || x.GenderId == 3).ToList();
             var ByRoleAndGender = ByGender.Where(x => x.RoleId == p.RoleId || x.RoleId == 15).ToList();
             var ByRoleGenderAndProfession = ByRoleAndGender.Where(x => x.ProfessionId == p.ProfessionId || x.ProfessionId == 14).ToList();
-            List<Present> ByRoleGenderProfessionAndInterests = new List<Present>();
-            List<Present> ByRoleGenderAndInterests = new List<Present>();
-            foreach(var m in p.InterestId){
-                ByRoleGenderProfessionAndInterests = ByRoleGenderAndProfession.Where(x => x.InterestId == m).ToList();                
-                ByRoleGenderAndInterests = ByRoleAndGender.Where(x => x.InterestId == m).ToList();
-            }
-            var ByRoleGenderProfessionInterestsAndFestival = ByRoleGenderProfessionAndInterests.Where(x => x.FestivalId == p.FestivalId || x.FestivalId == 16).ToList();
+            //var ByRoleGenderProfessionAndInterests = ByRoleGenderAndProfession.Where(x => x.InterestId == p.InterestId).ToList();                
+            //var ByRoleGenderAndInterests = ByRoleAndGender.Where(x => x.InterestId == p.InterestId).ToList();
+            var ByRoleGenderProfessionInterestsAndFestival = ByRoleGenderAndProfession.Where(x => x.FestivalId == p.FestivalId || x.FestivalId == 16).ToList();
             var ByRoleGenderAndFestival = ByRoleAndGender.Where(x => x.FestivalId == p.FestivalId || x.FestivalId == 16).ToList();
-            var PersonalPresents = ByRoleGenderProfessionInterestsAndFestival.Union(ByRoleGenderProfessionAndInterests).Union(ByRoleGenderAndInterests).Union(ByRoleGenderAndProfession).Union(ByRoleGenderAndFestival).Union(ByRoleAndGender);
+            var PersonalPresents = ByRoleGenderProfessionInterestsAndFestival.Union(ByRoleGenderAndProfession).Union(ByRoleGenderAndFestival).Union(ByRoleAndGender).ToList();
             return View(PersonalPresents);
         }
         [Authorize]
@@ -127,6 +123,9 @@ namespace PersonalPresents.Controllers
             var orders = await _context.Orders.Where(x => x.UserId == user.Id).ToListAsync();
             return View(orders);
         }
+        public IActionResult Categories(){
+            return View();
+        }
         public async Task<IActionResult> GenderCatagorie(){
             var gender = await _context.Genders.ToListAsync();
             return View(gender);
@@ -159,12 +158,8 @@ namespace PersonalPresents.Controllers
             return View(interests);
         }
         [HttpPost]
-        public async Task<IActionResult> InterestCategorie(List<int> Id){
-            List<Present> presents = new List<Present>();
-            foreach(var id in Id){
-                var present = await _context.Presents.Where(x => x.FestivalId == id).ToListAsync();
-                presents = presents.Union(present).ToList();
-            }
+        public async Task<IActionResult> InterestCategorie(int Id){
+            var presents = await _context.Presents.Where(x => x.FestivalId == Id).ToListAsync();
             return View("GetAllPresents", presents);
         }
         public async Task<IActionResult> ProfessionCategorie(){
