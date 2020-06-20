@@ -21,7 +21,7 @@ namespace PersonalPresents.Controllers
         [Authorize]
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("GetAllPresents", "User");
         }
 
     }

@@ -7,19 +7,19 @@
 <form method = "post" asp-action="Buy" asp-controller="User">
 <div class = "row">
     <div class = "col-md-5">
-        <label asp-for="Id" value="@ViewBag.BasketId"></label>
+        <input type="hidden" asp-for="Id" value="@ViewBag.BasketId" >
     </div>
 </div> 
 <div class = "row">
     <div class = "col-md-5">
         <input asp-for="Adress" type="text" placeholder="Adress">
     </div>
-</div>    
+</div><br>
 <div class = "row">
     <div class = "col-md-5">
         <input asp-for="PhoneNumber" type="text" placeholder="Phone number">
     </div>
-</div>
+</div><br>
 <div class = "row">
     <div class = "col-md-10">
         <label for="PaymentId">Payment</label>

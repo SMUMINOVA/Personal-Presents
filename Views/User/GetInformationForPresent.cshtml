@@ -39,6 +39,19 @@
 </div><br>
 <div class = "row">
     <div class = "col-md-10">
+        <label for="InterestId">Interest</label>
+    </div>
+<div class = "col-md-5">
+    <select class="form-control form-control-lg" name="InterestId" asp-for="InterestId" >
+        @foreach (var item in ViewBag.Interest)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+</div>
+</div><br>
+<div class = "row">
+    <div class = "col-md-10">
         <label for="ProfessionId">Profession</label>
     </div>
 <div class = "col-md-5">

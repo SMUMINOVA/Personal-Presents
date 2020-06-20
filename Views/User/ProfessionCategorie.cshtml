@@ -3,11 +3,9 @@
 @{
     Layout = "_UserLayout";
 } 
-<div class = "row justify-content-center">
-    @foreach (var item in Model)
-    {
-        <div class = "col-md-3">
-            <a asp-action="GenderCategorie" asp-controller="User" method="post" asp-route-Id="@item.Id">@item.Name</a>
-        </div>
-    }
-</div>
+
+@foreach (var item in Model)
+{
+    <a   class=" btn btn-lg btn-success btn-block" href="~/User/ProfessionCategories/@item.Id">@item.Name</a>
+    <br>
+}
