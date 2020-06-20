@@ -2,6 +2,7 @@ using System.Collections.Generic;
 
 namespace PersonalPresents.Models.PackageModels
 {
+    //модель для определения способа оплаты
     public class Payment
     {
         public int Id{get;set;}

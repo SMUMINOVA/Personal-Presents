@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PersonalPresents.Models
 {
+    //модель для взятия информации для регистрации
     public class RegisterModel
     {
         [Required(ErrorMessage = "Не указан Email")]

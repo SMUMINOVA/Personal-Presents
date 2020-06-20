@@ -24,12 +24,17 @@
         {
             <tr>
                 <td>@item.Id</td>
-                <a asp-action="GetPresent" asp-controller="User" asp-route-Id="@item.PresentsId">
-                    <td>@item.Present</td>
-                </a>
+                <td>
+                    <a asp-action="GetPresent" asp-controller="User" asp-route-Id="@item.PresentsId">@item.Present</a>
+                </td>
                 <td>@item.Count</td>
                 <td>@item.Price</td>
-                <td>@item.PaymentId</td>
+                @foreach (var p in ViewBag.Payment)
+                {
+                    if(p.Id == item.PaymentId){
+                        <td>@p.Name</td>
+                    }
+                }
                 <td>@item.UserId</td>
                 <td>@item.Adress</td>
                 <td>@item.PhoneNumber</td>

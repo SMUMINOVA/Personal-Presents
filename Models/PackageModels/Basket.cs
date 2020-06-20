@@ -1,5 +1,6 @@
 namespace PersonalPresents.Models.PackageModels
 {
+    //модель для работы с корзиной в бд
     public class Basket
     {
         public int Id{get;set;}

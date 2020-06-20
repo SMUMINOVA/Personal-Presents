@@ -13,6 +13,7 @@ namespace PersonalPresents.Controllers
 {
     public class AdminController : Controller
     {
+        //переменная для работы с бд
         private AppDbContent _context;
         private IWebHostEnvironment _hostEnvironment;
         public AdminController(AppDbContent context, IWebHostEnvironment hostEnvironment)
@@ -20,12 +21,13 @@ namespace PersonalPresents.Controllers
             _hostEnvironment = hostEnvironment;
             _context = context;
         }
-        [Authorize(Roles = "admin")]
+        //просмотр всех подарков
         [HttpGet]
         public async Task<IActionResult> GetAllPresents(){
             var presetns = await _context.Presents.ToListAsync();
             return View(presetns);
         }
+        //взятие из бд категорий для добавления нового подарка
         [HttpGet] 
         public async Task<IActionResult> Add(){
             ViewBag.Gender = await _context.Genders.ToListAsync();
@@ -37,6 +39,7 @@ namespace PersonalPresents.Controllers
         }
         [HttpPost]
         public async Task<IActionResult> Add(Present p){
+            //копируем картинку и записываем ее путь в бд
             string wwRootPath = _hostEnvironment.WebRootPath;
             string file = Path.GetFileNameWithoutExtension(p.ImgFile.FileName);
             string extension = Path.GetExtension(p.ImgFile.FileName);
@@ -45,6 +48,7 @@ namespace PersonalPresents.Controllers
             var path = Path.Combine(wwRootPath + "/img/", file);
             var fileStream = new FileStream(path, FileMode.Create);
             await p.ImgFile.CopyToAsync(fileStream);
+            //добавление нового подарка в бд после получения данных
             var gender = await _context.Genders.FirstOrDefaultAsync(x => x.Id == p.GenderId);
             p.gender = gender;
             var role = await _context.RoleForUsers.FirstOrDefaultAsync(x => x.Id == p.RoleId);
@@ -64,6 +68,7 @@ namespace PersonalPresents.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("GetAllPresents");
         }
+        //изменение цены названия или описания подарка по Id
         [HttpGet]
         public async Task<IActionResult> Change(int Id){
             Present p = await _context.Presents.FindAsync(Id);
@@ -78,6 +83,7 @@ namespace PersonalPresents.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("GetAllPresents");
         }
+        //удаление подарка по Id
         public async Task<IActionResult> Delete(int Id){
             Present p = await _context.Presents.FirstOrDefaultAsync(x => x.Id == Id);
             _context.Presents.Remove(p);
@@ -94,8 +100,10 @@ namespace PersonalPresents.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("GetAllPresents");
         }
+        //получение информации о всех заявках клиентов
         public async Task<IActionResult> Orders(){
             var or = await _context.Orders.ToListAsync();
+            ViewBag.Payment = await _context.Payments.ToListAsync();
             return View(or);
         }
     }

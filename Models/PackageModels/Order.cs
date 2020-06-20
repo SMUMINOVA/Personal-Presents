@@ -2,6 +2,7 @@ using System;
 
 namespace PersonalPresents.Models.PackageModels
 {
+    //модель для работы с заявками в бд
     public class Order
     {
         public int Id{get;set;}

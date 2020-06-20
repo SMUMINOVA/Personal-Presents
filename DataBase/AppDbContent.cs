@@ -5,6 +5,7 @@ using PersonalPresents.Models.PresentModels;
 
 namespace PersonalPresents.DataBase
 {
+    //класс для работы с бд
     public class AppDbContent : DbContext
     {
         public DbSet<User> Users{get;set;}

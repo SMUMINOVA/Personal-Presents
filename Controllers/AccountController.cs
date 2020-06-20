@@ -12,15 +12,18 @@ namespace PersonalPresents.Controllers
 {
     public class AccountController : Controller
     {
+        //переменная для работы с бд
         private AppDbContent _context;
         public AccountController(AppDbContent context)
         {
             _context = context;
         }  
+        //регистрация пользователя
         [HttpGet]
         public IActionResult Register(){
             return View();
         }
+        //проверка данных для регистрации(есть ли уже пользователь с таким логином) и добавление пользователя в бд 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register (RegisterModel model){
@@ -45,10 +48,12 @@ namespace PersonalPresents.Controllers
             }
             return View(model);
         }
+        //вход
         [HttpGet]
         public IActionResult Login(){
             return View();
         }
+        //проверка данных для входа
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginModel model){
@@ -67,6 +72,7 @@ namespace PersonalPresents.Controllers
             }
             return View(model);
         }
+        //метод для аутентификации данных
         private async Task Authenticate(User user){
             var claims = new List<Claim>{
                 new Claim (ClaimsIdentity.DefaultNameClaimType, user.Email),
@@ -75,6 +81,7 @@ namespace PersonalPresents.Controllers
             ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(id));
         }
+        //выход из аккаунта
         public async Task<IActionResult> Logout(){
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Login","Account");

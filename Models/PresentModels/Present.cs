@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace PersonalPresents.Models.PresentModels
 {
+    //модель для работы с подарками
     public class Present
     {
         public int Id{get;set;}
